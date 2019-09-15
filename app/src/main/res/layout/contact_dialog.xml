@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="25dp">
+
+            <TextView
+                android:id="@+id/contactTitleId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Add New Contact"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/kingthings"/>
+
+            <EditText
+                android:id="@+id/contactNameEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter contact username"
+                android:layout_below="@id/contactTitleId"
+                android:fontFamily="@font/kingthings"
+                android:background="@android:color/transparent"
+                android:paddingBottom="18dp"
+                android:paddingTop="15dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/addOnTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Contact On: "
+                android:layout_below="@id/contactNameEditText"
+                android:fontFamily="@font/kingthings"/>
+
+            <TextView
+                android:id="@+id/facebookTextId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addOnTextView"
+                android:foregroundGravity="left"
+                android:gravity="start"
+                android:paddingStart="15dp"
+                android:paddingTop="20dp"
+                android:text="Facebook"
+                android:fontFamily="@font/kingthings"/>
+
+            <Switch
+                android:id="@+id/facebookSwitchId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addOnTextView"
+                android:layout_alignParentEnd="true"
+                android:paddingEnd="100dp"
+                android:paddingTop="22dp"
+                android:paddingBottom="5dp" />
+
+            <TextView
+                android:id="@+id/twitterTextId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/facebookTextId"
+                android:foregroundGravity="left"
+                android:gravity="start"
+                android:paddingStart="15dp"
+                android:paddingTop="20dp"
+                android:text="Twitter"
+                android:fontFamily="@font/kingthings"/>
+
+            <Switch
+                android:id="@+id/twitterSwitchId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/facebookTextId"
+                android:layout_alignParentEnd="true"
+                android:paddingEnd="100dp"
+                android:paddingTop="22dp"
+                android:paddingBottom="5dp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/instagramTextId"
+                android:layout_below="@id/twitterTextId"
+                android:foregroundGravity="left"
+                android:gravity="start"
+                android:paddingStart="15dp"
+                android:paddingTop="20dp"
+                android:text="Instagram"
+                android:fontFamily="@font/kingthings"/>
+
+            <Switch
+                android:id="@+id/instagramSwitchId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/twitterTextId"
+                android:layout_alignParentEnd="true"
+                android:paddingEnd="100dp"
+                android:paddingTop="22dp"
+                android:paddingBottom="25dp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/linkedinTextId"
+                android:layout_below="@id/instagramTextId"
+                android:foregroundGravity="left"
+                android:gravity="start"
+                android:paddingStart="15dp"
+                android:paddingTop="20dp"
+                android:text="LinkedIn"
+                android:fontFamily="@font/kingthings"/>
+
+            <Switch
+                android:id="@+id/linkedinSwitchId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/instagramTextId"
+                android:layout_alignParentEnd="true"
+                android:paddingEnd="100dp"
+                android:paddingTop="22dp"
+                android:paddingBottom="25dp" />
+
+            <Button
+                android:id="@+id/okButtonId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linkedinSwitchId"
+                android:background="@color/colorAccent"
+                android:fontFamily="@font/kingthings"
+                android:text="add"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

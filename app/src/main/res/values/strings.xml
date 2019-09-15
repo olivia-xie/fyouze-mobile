@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Social Media Consolidator</string>
+    <string name="facebook_app_id">2411167899139774</string>
+    <string name="fb_login_protocol_scheme">fb2411167899139774</string>
+    <string name="title_activity_feed">FeedActivity</string>
+
 </resources>
